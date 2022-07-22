@@ -100,6 +100,7 @@
         width: 30%;
         
         }
+       
         #rightmiddle>div>input{
             width: 300px;
             margin-top: 7px;
@@ -109,7 +110,7 @@
             /* margin-left: 100px; */
             border: 0px;
             border-radius: 5px;
-            margin-left: -100px;
+            margin-left: -130px;
            
         }
         #rightmiddle>div>input::placeholder{
@@ -119,15 +120,21 @@
         #rightmiddle>div+div{
             display: flex;
             width: 30%;
-            margin-left: 30px;
+           
             font-size: 13px;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        #rightmiddle a{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 10px;
         }
         #rightmiddle>div>img{
             width: 20%;
             height: 80%;
-            margin-left: 15px;
+            margin-left: 10px;
             margin-top: 2px;
+           
         }
         
 
@@ -233,9 +240,9 @@
             width: 100% ;
         }
         #sixthsec>div{
-           
+          
             display: flex;
-            position: relative;
+            
 
         }
         #sixthsec>div img{
@@ -257,7 +264,89 @@
             #sixthsec h3{
                 font-family: Arial, Helvetica, sans-serif;  
             }
-        
+            #sixthsec>div>div:hover{
+                animation: grow;
+                  text-align: center;
+            }
+
+            #seventhsec{
+                width: 100%;
+                height: auto;
+              
+                display: flex;
+                margin-top: 20px;
+            }
+            #seventhsec>div{
+                width: 30%;
+                
+                margin: auto;
+                
+            }
+            #seventhsec>div>img{
+               width: 100%;
+               
+            }
+            #eighthsec{
+                width: 100%;
+                height: auto;
+              
+                display: flex;
+                margin-top: 20px;
+            }
+            #eighthsec>div{
+                width: 23%;
+                
+                margin: auto;
+                
+            }
+           
+            #eighthsec>div>img{
+               width: 100%;
+            }
+            #ninthsec{
+                width: 100%;
+                height: auto;
+              
+                display: flex;
+                margin-top: 20px;
+            }
+            #ninthsec>div{
+                width: 18%;
+                
+                margin: auto;
+                
+            }
+           
+            #ninthsec>div>img{
+               width: 100%;
+            }
+            #tenthsec{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+            }
+            #tenthsec>div{
+                margin: auto;
+                width: 98%;
+            }
+            #tenthsec>div>img{
+                width: 100%;
+            }
+            #eleventhsec{
+                width: 100%;
+            }
+            #eleventhsec>img{
+                width: 100%;
+            }
+
+            #twelvesec{
+                width: 100%;
+            }
+            #twelvesec>img{
+                width: 100%;
+            }
+
     </style>
 </head>
 <body>
@@ -293,7 +382,10 @@
             <input type="text" placeholder="Search by product,category or collection"/>
         </div>
         <div>
-            <p>LOGIN</p>
+            <a href="./signup.html">
+                <p>SIGNUP</p></a>
+            <a href="./login.html">
+            <p>LOGIN</p></a>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSiymnarKmUJjq8zfiu1e18evsOJCNRd-sA&usqp=CAU"/>
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAY1BMVEX///8AAABWVlbU1NRDQ0Px8fHs7Oz39/dNTU38/Pw3NzeMjIz09PTKysqjo6PR0dHm5uaAgIDd3d1paWm/v7+bm5srKytxcXFhYWGGhoYdHR0QEBCvr68WFhaUlJR3d3ckJCQhGeJBAAADnklEQVR4nO1a25aiMBA0gBCQ+00EvPz/V06HXZV1lDBUw54zJ/U0iGOKpFNd3WG3MzAwMDAwMDBYD2kUZ41lNVkcpf5/GN/vi7N4oGvicGsGfSdeUW1KIJXDoM0pLpOkjE/NcBkk2zGIajVg9QwAP60CtRzlVgxy9ciXl7UPL+rTjebBVWFof//cVhzyLRj4lhDt25HyVgjpbUChp2eN3t+KttkXHi3D4dPNA4Xk+vpQ0Sif75JaXFanQIP0n++qVVqbAS13PTHVYf0xUNiQCZFp7p/WZbAP3krCEyQOzroBScIYuFNfcIljuioFCrdi+huFEOtmiqt2010mZIMFlvYZS+08YfAdbSKiaJFrUlDBpon3kLbEmkYyJeXRpEKP9syefeD9HWHSirO7nwS5iToPH5c8DA7OE5QCHA0ojY2uWHbH/ptV/hE45sHGKEzK+UzQRrdC9w+Sm+hSdxJpJ2r779+hXkZmoR/lRveHOyKbNBezQTYpvv8dOnMoPHUh5vGS1/FkSm0eTMfqSIt4ZaAgxz7IGk3Je9CDW4+LiEetu1HVkN50jkR5mvoxUVRZTHjdufApvB7L7950xYqKlvphajwihCcMynzO86p0pKZsTKQz2of6zDoDFFHN6DLUFmze+BsNhzDEkAs6aMN3BjB16TWefxYKqGmQMNi4UEIBpWwcWla47WiPLfj3WrTAvw+gx7CAroVn4bsSXUwslAagIc2Qrg9guq3w4gqVtxdxXQJsT3IUV57eJml+gLIc1gckg9BB2dbvxA3rN9j/pOolcFAfj5fqcMujh/fUARWGCs73sI+/wuLWoz7egjuZ0djULwF+wpCjLWGhbezoEIIUPIautsD0NZ3s/M9Dh7VjE4aaUGKmhcTxiFI4YvLYM7T2T5i04OIIy+OFoVHTY8dVGUNVWmIG+Mhw0hRhIc1QBYCViC8/HA3/BHkr5HLv5wejvtFSpLUIAAq15jBsDlx6juUUvJbhbGEfiHZ5nsKLgB1aingsnUtpKBgKhsIvouDfkAxz/xEpblCaYhFoJE1JnjSFTGWBdml2Q68I6ZJkDKetNuYdKx7viJj4nsfEI7+RMByqZJgFDoUIUAr6d0+m0YHN10Fhsf7AFS6n4GPrEi6tT+hDqBcWsB60gM62FI7ga5wXvElC2tYBAml3DPpK0xBE9kJEAUOnaOgbQmB4AdM+64f5jDPHS0W7vLAWo9jkBXUDAwMDAwOD344vXiYmk8YP+LIAAAAASUVORK5CYII="/>
              
@@ -415,7 +507,7 @@
    </div>
    <h1>BESTSELLERS FOR MEN</h1>
    <div id="sixthsec">
-    <div>
+    <div  id="crauser">
      <div>
         <img src="https://images.bewakoof.com/t320/batman-comical-half-sleeve-t-shirt-520741-1658208762-1.jpg"/>
         <h3>&#8377  399</h3>
@@ -437,10 +529,75 @@
         <h3>&#8377  399</h3> 
      </div>
      
-     <button id="leftbtn"><</button>
-     <button id="rightbtn">></button>
+     <!-- <button id="leftbtn"><</button>
+     <button id="rightbtn">></button> -->
     </div>
    </div>
+   <div id="seventhsec">
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/clearance-zone-tshirt-1657884720.jpg"/>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/Static-JustArrived-Cargo-men-1658250092.gif"/>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/minion-homepage-men-1658140992.jpg"/>
+    </div>
+   </div>
+   <h1>BEST BARGAIN CORNER</h1>
+   <div id="eighthsec">
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-tees---Copy-1658123486.jpg"/>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-bboxers2-1658294222.jpg"/>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-shirts-1658123485.jpg"/>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/budget-buys-2-x-2-new-sliders-1658123485.jpg"/>
+    </div>
+   </div>
+   <h1>CLEARANCE ZONE</h1>
+   <div id="ninthsec">
+    <div>
+        <img src="https://images.bewakoof.com/t320/men-s-black-t-shirt-106-1655745629-5.jpg"/>
+        <h3>&#8377  399</h3> 
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/t320/men-s-full-sleeve-t-shirts-1094-1655746804-1.jpg"/>
+        <h3>&#8377  399</h3>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/t320/men-s-white-t-shirt-1093-1655746832-1.jpg"/>
+        <h3>&#8377  349</h3>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/t320/men-s-blue-t-shirt-115-1655747790-1.jpg"/>
+        <h3>&#8377  349</h3>
+    </div>
+    <div>
+        <img src="https://images.bewakoof.com/t320/men-s-red-be-a-human-t-shirt-343165-1655820980-4.jpg"/>
+        <h3>&#8377  299</h3>
+    </div>
+   </div>
+   <h1>THE STOOPID COLLECTION</h1>
+   <div id="tenthsec">
+     <div>
+        <img src="https://images.bewakoof.com/uploads/grid/app/PlusSize-mid-size-banner-men-1657003958.jpg"/>
+     </div>
+     <div><img src="https://images.bewakoof.com/uploads/grid/app/unnamed-1657696177.jpg"/></div>
+     <div><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Plus-Size-Men-1658207004.jpg"/></div>
+     <div><img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Full-Sleeves-Men-1658308584.jpg"/></div>
+   </div>
+   <div id="eleventhsec">
+    <img src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png"/>
+   </div>
+   <h1>CUSTOMIZE YOUR T-SHIRT</h1>
+   <div id="twelvesec">
+    <img src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif"/>
+   </div>
 </body>
-
+<script src="homepage.js"></script>
 </html>

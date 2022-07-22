@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        #navbar{
+          height: auto;
+          width: 100%;
+          position: fixed;
+          background-color: white;
+          top: 0px;
+           
+         
+        }
+        #uppernav{
+           
+           height: 30px;
+           width: 100%;
+           display: flex;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(218, 216, 216);
+           color:black;
+           padding-bottom: 5px;
+
+        }
+        #uppernav>div{
+           
+           width: 50%;
+           height: 100%;
+           display: flex;
+           padding-left: 20px;
+           
+          
+        }
+        
+        #leftupper>p{
+            font-size: 12px;
+            margin-left: 20px;
+            text-align: center;
+
+            
+            
+        }
+        #rightupper{
+           text-align-last: right;
+           font-size: 12px;
+           padding-left:60%;
+        }
+        #rightupper>p{
+            margin-left: 20px;
+           
+            
+        }
+        #rightupper>p:nth-child(1){
+            margin-left: 70%;
+            
+        }
+        #middlenav{
+           border-bottom: 2px solid rgb(172, 171, 170);
+          
+           height: 40px;
+           width: 100%;
+           display: flex;
+          justify-content: space-between;
+        }
+        #leftmiddle {
+           display: flex;
+           width: 50%;
+
+        }
+        #leftmiddle>div{
+            display: flex;
+            font-size: 13px;
+            width: 50%;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #leftmiddle>div>img{
+            width: 50%;
+            padding-left: 20%;
+            padding-top: 5px; 
+            height: 30px;
+        }
+        #leftmiddle>div>p{
+            margin-left: 7%;
+
+            
+        }
+        #leftmiddle>div>p:hover{
+            border-bottom: 5px solid yellow;
+            
+            margin-top: 10px;
+
+        }
+        #rightmiddle{
+            display: flex;
+        width: 30%;
+        
+        }
+       
+        #rightmiddle>div>input{
+            width: 300px;
+            margin-top: 7px;
+            text-align: center;
+            background-color: rgb(225, 222, 222);
+            padding:5px;
+            /* margin-left: 100px; */
+            border: 0px;
+            border-radius: 5px;
+            margin-left: -60px;
+           
+        }
+        #rightmiddle>div>input::placeholder{
+            color: rgb(167, 165, 165);
+            
+        }
+        #rightmiddle>div+div{
+            display: flex;
+            width: 30%;
+            
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        #rightmiddle>div>img{
+            width: 20%;
+            height: 80%;
+            margin-left: 10px;
+            margin-top: 2px;
+            
+           
+        }
+        
+       #body{
+        width: 100%;
+        height: 600px;
+        margin-top: 30px;
+        display: flex;
+       }
+        #body>div{
+            width: 50%;
+            
+            height: 600px;
+           
+        }
+        #left>img{
+            width: 100%;
+           
+        }
+        #left{
+            background-color: gold;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;  
+            text-align: center;
+        }
+        h3{
+            font-family: Arial, Helvetica, sans-serif;  
+            text-align: center; color: darkgrey;
+        }
+        #formtxt{
+            margin-top: 50px;
+
+        }
+        #formtxt>input{
+            height: 50px;
+            width: 70%;
+            margin-bottom: 20px;
+            margin-left: 15%;
+            text-align: center;
+            font-size: 20px;
+            
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            
+        }
+        #submit{
+            background-color:black;
+            color: white;
+            border: 0px;
+        }
+    </style>
+</head>
+<body>
+   <div id="navbar">
+    <div id="uppernav">
+        <div id="leftupper">
+            <p>Offers</p>
+            <p>Fanbook</p>
+            <p>Download App</p>
+            <p>TriBe Membership</p>
+        </div>
+       
+        <div id="rightupper">
+            <p>Contact Us</p>
+            <p>Track Order</p>
+        </div>
+    </div>
+    <div id="middlenav">
+     <div id="leftmiddle">
+        <div>
+            <img src="https://images.bewakoof.com/web/ic-desktop-normal-bwkf-logo.svg"/>
+
+        </div>
+        <div>
+            <p>MEN</p>
+            <p>WOMEN</p>
+            <p>MOBILE COVER</p>
+        </div>
+       
+     </div>
+     <div id="rightmiddle">
+        <div>
+            <input type="text" placeholder="Search by product,category or collection"/>
+        </div>
+        <div>
+            
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSiymnarKmUJjq8zfiu1e18evsOJCNRd-sA&usqp=CAU"/>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAY1BMVEX///8AAABWVlbU1NRDQ0Px8fHs7Oz39/dNTU38/Pw3NzeMjIz09PTKysqjo6PR0dHm5uaAgIDd3d1paWm/v7+bm5srKytxcXFhYWGGhoYdHR0QEBCvr68WFhaUlJR3d3ckJCQhGeJBAAADnklEQVR4nO1a25aiMBA0gBCQ+00EvPz/V06HXZV1lDBUw54zJ/U0iGOKpFNd3WG3MzAwMDAwMDBYD2kUZ41lNVkcpf5/GN/vi7N4oGvicGsGfSdeUW1KIJXDoM0pLpOkjE/NcBkk2zGIajVg9QwAP60CtRzlVgxy9ciXl7UPL+rTjebBVWFof//cVhzyLRj4lhDt25HyVgjpbUChp2eN3t+KttkXHi3D4dPNA4Xk+vpQ0Sif75JaXFanQIP0n++qVVqbAS13PTHVYf0xUNiQCZFp7p/WZbAP3krCEyQOzroBScIYuFNfcIljuioFCrdi+huFEOtmiqt2010mZIMFlvYZS+08YfAdbSKiaJFrUlDBpon3kLbEmkYyJeXRpEKP9syefeD9HWHSirO7nwS5iToPH5c8DA7OE5QCHA0ojY2uWHbH/ptV/hE45sHGKEzK+UzQRrdC9w+Sm+hSdxJpJ2r779+hXkZmoR/lRveHOyKbNBezQTYpvv8dOnMoPHUh5vGS1/FkSm0eTMfqSIt4ZaAgxz7IGk3Je9CDW4+LiEetu1HVkN50jkR5mvoxUVRZTHjdufApvB7L7950xYqKlvphajwihCcMynzO86p0pKZsTKQz2of6zDoDFFHN6DLUFmze+BsNhzDEkAs6aMN3BjB16TWefxYKqGmQMNi4UEIBpWwcWla47WiPLfj3WrTAvw+gx7CAroVn4bsSXUwslAagIc2Qrg9guq3w4gqVtxdxXQJsT3IUV57eJml+gLIc1gckg9BB2dbvxA3rN9j/pOolcFAfj5fqcMujh/fUARWGCs73sI+/wuLWoz7egjuZ0djULwF+wpCjLWGhbezoEIIUPIautsD0NZ3s/M9Dh7VjE4aaUGKmhcTxiFI4YvLYM7T2T5i04OIIy+OFoVHTY8dVGUNVWmIG+Mhw0hRhIc1QBYCViC8/HA3/BHkr5HLv5wejvtFSpLUIAAq15jBsDlx6juUUvJbhbGEfiHZ5nsKLgB1aingsnUtpKBgKhsIvouDfkAxz/xEpblCaYhFoJE1JnjSFTGWBdml2Q68I6ZJkDKetNuYdKx7viJj4nsfEI7+RMByqZJgFDoUIUAr6d0+m0YHN10Fhsf7AFS6n4GPrEi6tT+hDqBcWsB60gM62FI7ga5wXvElC2tYBAml3DPpK0xBE9kJEAUOnaOgbQmB4AdM+64f5jDPHS0W7vLAWo9jkBXUDAwMDAwOD344vXiYmk8YP+LIAAAAASUVORK5CYII="/>
+             
+        </div>
+     </div>
+     </div>
+   <div id="body">
+    <div id="left">
+        <h1>Welcome to the world of Bewakoof!</h1>
+        <img src="https://images.bewakoof.com/web/group-19-1617704502.png"/>
+    </div>
+    <div id="right">
+        <h1>Sign up</h1>
+        <h3>for Latest trends, exciting offers and everything Bewakoof!</h3>
+        <form id="formtxt">
+            <input type="number" placeholder="Enter Mobile Number" id="number"/>
+            <input type="email" placeholder="Enter Email" id="email"/>
+            <input type="password" placeholder="Enter Password" id="password"/>
+            <input type="Submit" value="Signup" id="submit"/>
+        </form>
+    </div>
+   </div>
+</body>
+<!-- <script src="homepage.js"></script> -->
+<script>
+    let form=document.querySelector("form")
+    let signupls=JSON.parse(localStorage.getItem("signup"))||[]
+    form.addEventListener("submit",function(e){
+        e.preventDefault();
+        let obj={
+            email:form.email.value,
+            number:form.number.value,
+            password:form.password.value,
+        }
+        if(obj.email ==""|| obj.password==""||obj.number==""){
+         alert("Field Empty")
+         return;
+        } else{
+            signupls.push(obj)
+            localStorage.setItem("signup",JSON.stringify(signupls));
+        
+        }
+    })
+</script>
+
+</html>
